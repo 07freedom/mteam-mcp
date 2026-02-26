@@ -27,10 +27,18 @@ M-Team MCP Server 是一个基于 [FastMCP](https://gofastmcp.com/) 框架开发
 
 #### 安装步骤
 
+**方式一：从 PyPI 安装（推荐）**
+
+```bash
+pip install mteam-mcp
+```
+
+**方式二：从源码安装**
+
 1. 克隆或下载本项目：
 
 ```bash
-git clone https://github.com/your-username/mteam-mcp.git
+git clone https://github.com/07freedom/mteam-mcp.git
 cd mteam-mcp
 ```
 
@@ -74,8 +82,7 @@ MTEAM_API_KEY="your_mteam_api_key_here"
 {
   "mcpServers": {
     "mteam": {
-      "command": "python",
-      "args": ["/path/to/mteam-mcp/server.py"],
+      "command": "mteam-mcp",
       "env": {
         "MTEAM_API_KEY": "your_mteam_api_key_here"
       }
@@ -84,17 +91,25 @@ MTEAM_API_KEY="your_mteam_api_key_here"
 }
 ```
 
-> 也可以不在配置文件中填写 `env`，直接在项目目录下创建 `.env` 文件，服务器启动时会自动加载。
+> 若从源码运行，可将 `command` 改为 `python`，`args` 设为 `["/path/to/mteam-mcp/server.py"]`。也可不在配置中填写 `env`，在项目目录创建 `.env` 文件即可。
 
-#### 通过 FastMCP CLI 启动
+#### 通过命令行启动（pip 安装后）
+
+```bash
+mteam-mcp
+```
+
+或
+
+```bash
+python -m mteam_mcp
+```
+
+#### 从源码运行
 
 ```bash
 fastmcp run server.py:mcp
-```
-
-#### 直接运行
-
-```bash
+# 或
 python server.py
 ```
 
@@ -228,10 +243,18 @@ M-Team MCP Server is a [FastMCP](https://gofastmcp.com/)-based MCP (Model Contex
 
 #### Steps
 
+**Option 1: Install from PyPI (recommended)**
+
+```bash
+pip install mteam-mcp
+```
+
+**Option 2: Install from source**
+
 1. Clone or download this project:
 
 ```bash
-git clone https://github.com/your-username/mteam-mcp.git
+git clone https://github.com/07freedom/mteam-mcp.git
 cd mteam-mcp
 ```
 
@@ -275,8 +298,7 @@ Add the following to your MCP client config file:
 {
   "mcpServers": {
     "mteam": {
-      "command": "python",
-      "args": ["/path/to/mteam-mcp/server.py"],
+      "command": "mteam-mcp",
       "env": {
         "MTEAM_API_KEY": "your_mteam_api_key_here"
       }
@@ -285,17 +307,25 @@ Add the following to your MCP client config file:
 }
 ```
 
-> Alternatively, omit the `env` block and use a `.env` file in the project directory — it will be loaded automatically.
+> For source install, use `"command": "python"` with `"args": ["/path/to/mteam-mcp/server.py"]`. You can also omit `env` and use a `.env` file in the project directory.
 
-#### FastMCP CLI
+#### Command line (after pip install)
+
+```bash
+mteam-mcp
+```
+
+or
+
+```bash
+python -m mteam_mcp
+```
+
+#### From source
 
 ```bash
 fastmcp run server.py:mcp
-```
-
-#### Direct Execution
-
-```bash
+# or
 python server.py
 ```
 
