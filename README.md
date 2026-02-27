@@ -1,4 +1,4 @@
-# M-Team MCP Server
+# M-Team MCP
 
 [中文](#中文文档) | [English](#english-documentation)
 
@@ -8,7 +8,7 @@
 
 ### 简介
 
-M-Team MCP Server 是一个基于 [FastMCP](https://gofastmcp.com/) 框架开发的 MCP（Model Context Protocol）服务器，让 AI 助手（如 Claude、Cursor 等）能够直接调用 M-Team（馒头）私有种子站的 API，实现资源搜索、种子详情获取和种子文件下载功能。
+M-Team MCP 是一个基于 [FastMCP](https://gofastmcp.com/) 框架开发的 MCP（Model Context Protocol）服务器，让 AI 助手（如 Claude、Cursor 等）能够直接调用 M-Team（馒头）私有种子站的 API，实现资源搜索、种子详情获取和种子文件下载功能。
 
 ### 功能列表
 
@@ -224,7 +224,7 @@ Failed to get download token: {'code': '403', 'message': 'Forbidden'}
 
 ### Introduction
 
-M-Team MCP Server is a [FastMCP](https://gofastmcp.com/)-based MCP (Model Context Protocol) server that allows AI assistants (Claude, Cursor, etc.) to interact with the M-Team private torrent tracker API — enabling torrent search, detail retrieval, and `.torrent` file downloads.
+M-Team MCP is a [FastMCP](https://gofastmcp.com/)-based MCP (Model Context Protocol) server that allows AI assistants (Claude, Cursor, etc.) to interact with the M-Team private torrent tracker API — enabling torrent search, detail retrieval, and `.torrent` file downloads.
 
 ### Features
 
