@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "mteam-mcp"
+name = "mcp-server-mteam"
 version = "0.1.0"
 description = "MCP server for M-Team (馒头) private torrent tracker - search, detail, and download"
 readme = "README.md"
@@ -34,18 +34,18 @@ dev = [
 ]
 
 [project.scripts]
-mteam-mcp = "mteam_mcp.server:main"
+mcp-server-mteam = "mcp_server_mteam.server:main"
 
 [project.urls]
-Homepage = "https://github.com/07freedom/mteam-mcp"
-Repository = "https://github.com/07freedom/mteam-mcp"
-Documentation = "https://github.com/07freedom/mteam-mcp#readme"
+Homepage = "https://github.com/07freedom/mcp-server-mteam"
+Repository = "https://github.com/07freedom/mcp-server-mteam"
+Documentation = "https://github.com/07freedom/mcp-server-mteam#readme"
 
 [tool.hatch.build.targets.wheel]
-packages = ["mteam_mcp"]
+packages = ["mcp_server_mteam"]
 
 [tool.hatch.build.targets.sdist]
 include = [
-    "mteam_mcp/**",
+    "mcp_server_mteam/**",
     ".env_example",
 ]

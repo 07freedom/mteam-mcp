@@ -2,10 +2,10 @@
 """
 M-Team MCP Server - Convenience entry point when running from repo root.
 
-For pip-installed package, use: mteam-mcp  or  python -m mteam_mcp
+For pip-installed package, use: mcp-server-mteam  or  python -m mcp_server_mteam
 """
 
-from mteam_mcp.server import main
+from mcp_server_mteam.server import main
 
 if __name__ == "__main__":
     main()

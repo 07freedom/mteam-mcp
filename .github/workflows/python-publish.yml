@@ -42,7 +42,7 @@ jobs:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/mteam-mcp
+      url: https://test.pypi.org/p/mcp-server-mteam
     permissions:
       id-token: write
 
@@ -65,7 +65,7 @@ jobs:
     if: github.event_name == 'release' && github.event.action == 'published'
     environment:
       name: pypi
-      url: https://pypi.org/p/mteam-mcp
+      url: https://pypi.org/p/mcp-server-mteam
     permissions:
       id-token: write
 

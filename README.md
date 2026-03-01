@@ -30,7 +30,7 @@ M-Team MCP 是一个基于 [FastMCP](https://gofastmcp.com/) 框架开发的 MCP
 **方式一：从 PyPI 安装（推荐）**
 
 ```bash
-pip install mteam-mcp
+pip install mcp-server-mteam
 ```
 
 **方式二：从源码安装**
@@ -38,8 +38,8 @@ pip install mteam-mcp
 1. 克隆或下载本项目：
 
 ```bash
-git clone https://github.com/07freedom/mteam-mcp.git
-cd mteam-mcp
+git clone https://github.com/07freedom/mcp-server-mteam.git
+cd mcp-server-mteam
 ```
 
 2. 安装依赖：
@@ -82,7 +82,7 @@ MTEAM_API_KEY="your_mteam_api_key_here"
 {
   "mcpServers": {
     "mteam": {
-      "command": "mteam-mcp",
+      "command": "mcp-server-mteam",
       "env": {
         "MTEAM_API_KEY": "your_mteam_api_key_here"
       }
@@ -91,18 +91,18 @@ MTEAM_API_KEY="your_mteam_api_key_here"
 }
 ```
 
-> 若从源码运行，可将 `command` 改为 `python`，`args` 设为 `["/path/to/mteam-mcp/server.py"]`。也可不在配置中填写 `env`，在项目目录创建 `.env` 文件即可。
+> 若从源码运行，可将 `command` 改为 `python`，`args` 设为 `["/path/to/mcp-server-mteam/server.py"]`。也可不在配置中填写 `env`，在项目目录创建 `.env` 文件即可。
 
 #### 通过命令行启动（pip 安装后）
 
 ```bash
-mteam-mcp
+mcp-server-mteam
 ```
 
 或
 
 ```bash
-python -m mteam_mcp
+python -m mcp_server_mteam
 ```
 
 #### 从源码运行
@@ -202,7 +202,7 @@ Douban     : https://movie.douban.com/subject/1851857/  Rating: 9.2
 
 成功时：
 ```
-Torrent saved to: /home/user/mteam-mcp/seed/[M-TEAM]The.Dark.Knight.2008.IMAX.UHD.BluRay.2160p.DDP.5.1.DV.HDR.x265-hallowed.torrent
+Torrent saved to: /home/user/mcp-server-mteam/seed/[M-TEAM]The.Dark.Knight.2008.IMAX.UHD.BluRay.2160p.DDP.5.1.DV.HDR.x265-hallowed.torrent
 ```
 
 失败时：
@@ -246,7 +246,7 @@ M-Team MCP is a [FastMCP](https://gofastmcp.com/)-based MCP (Model Context Proto
 **Option 1: Install from PyPI (recommended)**
 
 ```bash
-pip install mteam-mcp
+pip install mcp-server-mteam
 ```
 
 **Option 2: Install from source**
@@ -254,8 +254,8 @@ pip install mteam-mcp
 1. Clone or download this project:
 
 ```bash
-git clone https://github.com/07freedom/mteam-mcp.git
-cd mteam-mcp
+git clone https://github.com/07freedom/mcp-server-mteam.git
+cd mcp-server-mteam
 ```
 
 2. Install dependencies:
@@ -298,7 +298,7 @@ Add the following to your MCP client config file:
 {
   "mcpServers": {
     "mteam": {
-      "command": "mteam-mcp",
+      "command": "mcp-server-mteam",
       "env": {
         "MTEAM_API_KEY": "your_mteam_api_key_here"
       }
@@ -307,18 +307,18 @@ Add the following to your MCP client config file:
 }
 ```
 
-> For source install, use `"command": "python"` with `"args": ["/path/to/mteam-mcp/server.py"]`. You can also omit `env` and use a `.env` file in the project directory.
+> For source install, use `"command": "python"` with `"args": ["/path/to/mcp-server-mteam/server.py"]`. You can also omit `env` and use a `.env` file in the project directory.
 
 #### Command line (after pip install)
 
 ```bash
-mteam-mcp
+mcp-server-mteam
 ```
 
 or
 
 ```bash
-python -m mteam_mcp
+python -m mcp_server_mteam
 ```
 
 #### From source
@@ -418,7 +418,7 @@ Download a `.torrent` file for the given torrent ID.
 
 On success:
 ```
-Torrent saved to: /home/user/mteam-mcp/seed/[M-TEAM]The.Dark.Knight.2008.IMAX.UHD.BluRay.2160p.DDP.5.1.DV.HDR.x265-hallowed.torrent
+Torrent saved to: /home/user/mcp-server-mteam/seed/[M-TEAM]The.Dark.Knight.2008.IMAX.UHD.BluRay.2160p.DDP.5.1.DV.HDR.x265-hallowed.torrent
 ```
 
 On failure:

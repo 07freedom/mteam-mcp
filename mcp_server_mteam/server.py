@@ -23,7 +23,7 @@ BASE_URL: str = os.environ.get("MTEAM_API_BASE", "https://api.m-team.cc/api").rs
 DOWNLOAD_DIR: str = os.environ.get("MTEAM_DOWNLOAD_DIR", "./seed")
 
 mcp = FastMCP(
-    "mteam-mcp",
+    "mcp-server-mteam",
     instructions=(
         "Tools for searching and downloading torrents from M-Team (馒头). "
         "Requires MTEAM_API_KEY to be set in the .env file."
@@ -278,7 +278,7 @@ def download_torrent(torrent_id: str) -> str:
 
 
 def main() -> None:
-    """Entry point for the mteam-mcp console script."""
+    """Entry point for the mcp-server-mteam console script."""
     mcp.run()
 
 
