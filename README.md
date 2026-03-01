@@ -1,4 +1,4 @@
-# M-Team MCP
+# mcp-server-mteam
 
 [中文](#中文文档) | [English](#english-documentation)
 
@@ -8,7 +8,7 @@
 
 ### 简介
 
-M-Team MCP 是一个基于 [FastMCP](https://gofastmcp.com/) 框架开发的 MCP（Model Context Protocol）服务器，让 AI 助手（如 Claude、Cursor 等）能够直接调用 M-Team（馒头）私有种子站的 API，实现资源搜索、种子详情获取和种子文件下载功能。
+mcp-server-mteam 是一个基于 [FastMCP](https://gofastmcp.com/) 框架开发的 MCP（Model Context Protocol）服务器，让 AI 助手（如 Claude、Cursor 等）能够直接调用 M-Team（馒头）私有种子站的 API，实现资源搜索、种子详情获取和种子文件下载功能。
 
 ### 功能列表
 
